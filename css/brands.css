@@ -46,13 +46,13 @@ button {
   outline: none;
   border-radius: 8px;
   cursor: pointer;
-  
-}     
+  transition: all 0.3s ease;
+}
+.button:hover,
 button:hover,
-.button:focus {
-  color: #212121;
-  border-color: #888;
-  outline: #7AB8FF solid 3px
+.button:focus,
+button:focus {
+  transform: scale(1.1);
 }
 .button.button-primary {
   color: #fff;
@@ -80,7 +80,7 @@ button:hover,
 /* Default (this is great for your own brand color!) */
 .button.button-default {
   color: #ffffff;
-  background-color: #2457F5;
+  background-color: rgb(38,67,125);
 }
 .button.button-default:hover,
 .button.button-default:focus {
@@ -197,7 +197,6 @@ button:hover,
   color: #FFFFFF;
   background-color: #1185FE;
 }
-
 .button.button-bluesky:hover,
 .button.button-bluesky:focus {
   filter: brightness(90%);
